@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bodycontainer" id="bodycontainer">
+        <div class="splashScreen" id="splashscreen">
+            <div class="appName">
+                SpotifyPink
+            </div>
+            <div class="tagline">made with love</div>
+            <span class="openUp" onclick="openUp()">
+               <i class="fa-solid fa-angles-up fa-2x"></i>
+            </span>
+           <span class="author">
+               Rushi Aher
+           </span>
+        </div>
+        <div class="maincontainer" id="maincontainer">
+            <nav class="navbar">
+                <i class="fa-solid fa-angle-down" id="closeDown " onclick="closeDown()"></i>
+                <span>Now Playing</span>
+                <i id="themeIcon" class="fa-regular fa-moon" onclick="changeTheme()"></i>
+            </nav>
+
+            <div class="coverContainer" >
+                <img src="/covers/cover3.jpg" alt="cover image" id="coverImg">
+            </div>
+
+            <div class="songInfo">
+                <p class="songName" id="songName">Pal-Pal-Dil-Ke-Pass</p>
+                <p class="artistName" id="artistName">Kishor Kumar</p>
+            </div>
+
+            <div class="progressBar">
+                <input type="range" name="myprogressbar" id="myprogressbar" min="0" max="100" value="0">
+
+            </div>
+
+            <div class="timeStamp">
+                <span id="songCurrentTime">0.00</span>
+                <span id="songDuration">0.0</span>
+            </div>
+
+
+            <div class="icons">
+                <span class="repeat"><i class="fa-solid fa-repeat"></i></span>
+                <div class="playerIcons"><i class="fa-solid fa-backward-step fa-3x"></i>
+                    <i onclick="playPause()"
+                    id="iconPlay"
+                     class="fa-solid fa-circle-play fa-3x"></i>
+                    <i class="fa-solid fa-forward-step fa-3x"></i></div>
+                <span class="openPlayList" onclick="openPlayList()"><i class="fa-duotone fa-list fa"></i></span>
+            </div>
+            <div class="showPlayList" id="showPlayList">
+                <div  class="musicIcon">
+                    <span ><i class="fa-solid fa-music"></i> <b>Playlist</b> </span>
+                
+                <span class="closeBtn" id="closeBtn" onclick="closeBtn()">&times</span>
+                </div>
+
+                <div class="musicList">
+                    <div class="musicInfo" id="1">
+                        <div>
+                            <div class="musicName">Beliver
+                            </div>
+                            <div class="musicArtist">Imagine Dragon</div>
+                        </div>
+                        
+                        <div class="musicTime">5.40</div>
+                        <div class="musicGif"><img src="5.gif" alt="" ></div>
+                    </div>
+                    <div class="musicInfo" id="2">
+                        <div>
+                            <div class="musicName">Beliver</div>
+                            <div class="musicArtist">Imagine Dragon</div>
+                        </div>
+
+                        <div class="musicTime">5.40</div>
+                        <div class="musicGif"><img src="5.gif" alt="" ></div>
+                    </div>
+                    <div class="musicInfo" id="3">
+                        <div>
+                            <div class="musicName">Beliver</div>
+                            <div class="musicArtist">Imagine Dragon</div>
+                        </div>
+
+                        <div class="musicTime">5.40</div>
+                        <div class="musicGif"><img src="5.gif" alt=""></div>
+                    </div>
+                    <div class="musicInfo" id="4">
+                        <div>
+                            <div class="musicName">Beliver</div>
+                            <div class="musicArtist">Imagine Dragon</div>
+                        </div>
+
+                        <div class="musicTime">5.40</div>
+                        <div class="musicGif"><img src="5.gif" alt=""></div>
+                    </div>
+                    <div class="musicInfo" id="5">
+                        <div>
+                            <div class="musicName">Beliver</div>
+                            <div class="musicArtist">Imagine Dragon</div>
+                        </div>
+
+                        <div class="musicTime">5.40</div>
+                        <div class="musicGif"><img src="5.gif" alt="" ></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/913a37ac6a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

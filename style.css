@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,400;1,700&display=swap');
+
+.bodycontainer{
+    height: 100vh;
+    background-image: linear-gradient(rgb(243 90 148 / 88%), rgb(150 110 137));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+    
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'ubuntu' sans-serif;
+}
+
+.splashScreen{
+    width: 400px;
+    height: 680px;
+    background-color: #181123;
+    border-radius: 20px;
+    position: absolute;
+
+}
+
+
+.appName{
+    padding: 100px 100px 00px 100px;
+    margin-top: 173px;
+    /* margin:250px 100px; */
+    font-size: 40px;
+    font-family: 'ubuntu' sans-serif;
+    font-weight: bolder;
+    background-color: red;
+background-image: linear-gradient(45deg, #ff007c, #ffebf0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+.tagline{
+    color:white;
+    font-size: 20px;
+    padding: 10px 130px;
+    font-family: 'ubuntu' sans-serif;
+}
+
+.openUp{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top:190px ;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.author{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.maincontainer{
+    width: 400px;
+    height: 680px;
+    background-color: #181123;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    display: none;
+
+    
+}
+
+.navbar{
+    margin-top: 10px;
+    display: flex;
+    height: 50px;
+    border-radius: 20px 20px 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+.navbar i{
+    margin: 20px;
+    cursor: pointer;
+}
+
+.coverContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 20px;
+}
+.coverContainer img{
+    width: 320px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+.songInfo p{
+    text-align: center;
+}
+
+.songName{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom:10px;
+}
+
+.artistName{
+    font-size: 20px;
+}
+
+.progressBar{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+.progressBar input{
+    width: 300px;
+    
+}
+
+#myprogressbar{
+    cursor: pointer;
+}
+
+.timeStamp{
+    display: flex;
+    justify-content: space-between;
+}
+.timeStamp span{
+    margin: 5px 52px;
+    font-size: 20px;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+
+}
+.icons i{
+  color: rgb(231 68 151);
+}
+.playerIcons i{
+    margin: 0 10px;
+    cursor: pointer;
+  
+}
+
+.repeat, .openPlayList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.showPlayList{
+    display: none;
+    width: 390px;
+    margin: 0px 5px;
+    height: 350px;
+    /* background-color: #181123; */
+    background-image: linear-gradient(45deg, #ff007c, #ffebf0);
+
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+}
+
+.musicIcon{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    color: #181123;
+}
+
+.closeBtn{
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #181123;
+    margin:0px 10px;
+}
+.musicList{
+    height: 250px;
+    margin: 10px 10px;
+    overflow: scroll;
+    cursor: pointer;
+    
+}
+.musicList::-webkit-scrollbar{
+    display: none;
+}
+.musicInfo{
+    display: flex;
+    justify-content: space-between;
+    background-color: #181123;
+    color: white;
+    /* background-image: linear-gradient(45deg, #ff007c, #ffebf0); */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+.musicName{
+    font-size: 20px;
+    font-weight: 800;
+}
+.musicTime{
+    display: flex;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.musicGif{
+    display: none;
+    margin-right: 22px;
+    
+}
+.musicGif img{
+    width: 25px;
+    height: 25px;
+}
